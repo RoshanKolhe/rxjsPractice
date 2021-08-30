@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+ul.techlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.techlist li {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+ul.techlist.error li {
+  color: red;
+  background-color: rgb(248, 222, 222);
+}
+ul.techlist.completed li {
+  color: green;
+  background-color: rgb(210, 247, 210);
+}
+
+.notification {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.notification .item {
+  overflow: hidden;
+}
+.notification .item:not(:first-child) {
+  border-top: 1px solid #f5f5f5;
+}
+
+.notification .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 0 10px;
+}
+
+.notification .body {
+  font-size: 13px;
+  line-height: normal;
+}
+
+.notification .body .item-img {
+  float: right;
+  margin: 0 0 0 10px;
+  border: 1px solid #989898;
+}
+
+.red {
+  height: 50px;
+  width: auto;
+  background-color: red;
+  text-align: center;
+  margin-right: 5px;
+}
+.yellow {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  text-align: center;
+  margin-right: 5px;
+}
+.green {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  text-align: center;
+  margin-right: 5px;
+}
+.pink {
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+  text-align: center;
+  margin-right: 5px;
+}
+.blue {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  text-align: center;
+  margin-right: 5px;
+}
+.card {
+  margin: 10px;
+}

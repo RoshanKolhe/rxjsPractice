@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>Custom Observable</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <strong> Ex - 01(Manual) </strong>
+      <hr />
+      <ul
+        [ngClass]="
+          textstatus == 'completed'
+            ? 'completed'
+            : textstatus == 'error'
+            ? 'error'
+            : ''
+        "
+        class="techlist"
+        id="ulList"
+      ></ul>
+    </div>
+    <div class="col-md-6">
+      <strong> Ex - 02(Custom interval Observable) </strong>
+      <hr />
+      <ul
+        [ngClass]="
+          textstatus1 == 'completed'
+            ? 'completed'
+            : textstatus1 == 'error'
+            ? 'error'
+            : ''
+        "
+        class="techlist"
+        id="ulList2"
+      ></ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <br />
+      <strong> Ex - 03(Random Name) </strong>
+      <br />
+
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Random Names:</strong>'Anup','shekhar','John','Alex'
+      </p>
+      <hr />
+      <p>
+        Current Name: <strong class="text-success">{{ names }}</strong>
+      </p>
+      <span
+        class="badge"
+        [ngClass]="
+          namestatus == 'completed'
+            ? 'bg-success'
+            : namestatus == 'error'
+            ? 'bg-danger'
+            : 'bg-primary'
+        "
+        >{{
+          namestatus == "completed"
+            ? "success"
+            : namestatus == "error"
+            ? "Error"
+            : "Fetching"
+        }}</span
+      >
+    </div>
+  </div>
+</div>

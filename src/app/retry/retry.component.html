@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Retry, Retrywhen, Scan and Delay</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table" *ngIf="arr != null">
+        <tr>
+          <th>Id</th>
+          <td>{{ arr.id }}</td>
+        </tr>
+        <tr>
+          <th>Title</th>
+          <td>{{ arr.title }}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{{ arr.body }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)="fetchDetails()" type="button">
+    <span *ngIf="fetching" class="spinner-border spinner-border-sm"></span>
+    {{ fetching ? "Details fetched" : "Fetch Details" }}
+  </button>
+  <p>
+    Status: <strong>{{ status }}</strong>
+  </p>
+</div>
