@@ -1,9 +1,13 @@
 <div id="cardWrapper">
-  <div class="center" routerLink="from-event">
-    <p>FROM -EVENT</p>
+  <div
+    class="center"
+    *ngFor="let observable of 'header.observables' | translate"
+    routerLink="{{ observable.link }}"
+  >
+    <p>{{ observable.menu }}</p>
   </div>
 
-  <div class="center" routerLink="interval">
+  <!-- <div class="center" routerLink="interval">
     <p>Interval</p>
   </div>
   <div class="center" routerLink="offrom">
@@ -81,4 +85,10 @@
   <div class="center" routerLink="cathchandthrow">
     <p>CatchError and ThrowError</p>
   </div>
+  <div class="center" routerLink="externalLib">
+    <p>External Lib</p>
+  </div>
+  <div class="center" routerLink="d3js">
+    <p>D3.js Chart</p>
+  </div> -->
 </div>

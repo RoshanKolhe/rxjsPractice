@@ -1,3 +1,4 @@
+import { LangTranslateModule } from './appModules/lang-translate.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -40,6 +41,8 @@ import { ShareReplyComponent } from './share-reply/share-reply.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 import { ZipforkComponent } from './zipfork/zipfork.component';
 import { CatchErrorComponent } from './catch-error/catch-error.component';
+import { ExternamLibComponent } from './externam-lib/externam-lib.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,11 +80,14 @@ import { CatchErrorComponent } from './catch-error/catch-error.component';
     CombineLatestComponent,
     ZipforkComponent,
     CatchErrorComponent,
+    ExternamLibComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LangTranslateModule,
     HttpClientModule,
     LoadingBarModule,
     FormsModule

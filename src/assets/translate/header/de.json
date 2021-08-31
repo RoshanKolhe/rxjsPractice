@@ -1,0 +1,51 @@
+{
+    "header" :{
+        "menu" :[
+            { "menu": "Versprechen","link":"promise"},
+            { "menu": "beobachtbar","link":"observable"}
+            
+        ],
+        "observables":[
+            { "menu": "VON-EVENT","link":"from-event"},
+            { "menu": "Intervall","link":"interval"},
+            { "menu":"VON und VON","link":"offrom"},
+            { "menu":"ZuArray","link":"toArray"},
+            { "menu":"Benutzerdefiniert","link":"customobservable"},
+            { "menu": "Karte","link":"map"},
+            { "menu": "Zupfen","link":"pluck"},
+            { "menu": "Filter","link":"filter"},
+            { "menu": "TZapfhahnap","link":"tap"},
+            { "menu": "Nehmen","link":"take"},
+            { "menu": "Wiederholen","link":"retry"},
+            { "menu": "Entprellzeit","link":"debounce-time"},
+            { "menu": "Gegenstand","link":"subject"},
+            { "menu": "ReplayBetreff","link":"replay-subject"},
+            { "menu": "AsyncSubject","link":"async-subject"},
+            { "menu": "Konkat","link":"concat"},
+            { "menu": "Verschmelzen","link":"merge"},
+            { "menu": "Karte zusammenführen","link":"mergemap"},
+            { "menu": "ConcatMap","link":"concatmap"},
+            { "menu": "Concat Map-Benachrichtigung","link":"concatmapnotification"},
+            { "menu": "Karte wechseln","link":"switchmap"},
+            { "menu": "Suche wechseln","link":"switchsearch"},
+            { "menu": "Auspuffkarte","link":"exhaustMap"},
+            { "menu": "Antwort teilen","link":"shareReply"},
+            { "menu": "CombineLatest with LatestForm","link":"combine"},
+            { "menu": "Zip und Fork verbinden","link":"zipfork"},
+            { "menu": "CatchError and ThrowError","link":"cathchandthrow"},
+            { "menu": "Externe Bibliothek","link":"externalLib"},
+            { "menu": "D3.js-Diagramm","link":"d3js"}
+
+
+         
+
+
+
+
+        ]
+            
+        
+            
+        
+    }
+}

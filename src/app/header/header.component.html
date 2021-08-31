@@ -17,13 +17,41 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div>{{ "header.text" | translate }}</div> -->
       <ul class="nav navbar-nav navbar-center">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/promise"> Promise </a>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" routerLink="/promise">
+            {{ "header.menu.item1" | translate }}
+          </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/observable"> Observable </a>
+          <a class="nav-link" routerLink="/observable">
+            {{ "header.menu.item2" | translate }}
+          </a>
+        </li> -->
+        <li class="nav-item" *ngFor="let menu of 'header.menu' | translate">
+          <a class="nav-link" routerLink="{{ menu.link }}">
+            {{ menu.menu }}
+          </a>
+        </li>
+        <li class="nav-item active">
+          <div class="lang">
+            <a
+              class="nav-link"
+              [class.active]="switchLang == 'de'"
+              (click)="selectedLanguage('de')"
+            >
+              DE
+            </a>
+            <a
+              class="nav-link"
+              [class.active]="switchLang == 'en'"
+              (click)="selectedLanguage('en')"
+            >
+              EN
+            </a>
+          </div>
         </li>
       </ul>
     </div>

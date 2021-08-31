@@ -1,3 +1,5 @@
+import { D3chartComponent } from './d3chart/d3chart.component';
+import { ExternamLibComponent } from './externam-lib/externam-lib.component';
 import { CatchErrorComponent } from './catch-error/catch-error.component';
 import { ZipforkComponent } from './zipfork/zipfork.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
@@ -158,6 +160,14 @@ const routes: Routes = [
     {
       path:"cathchandthrow",
       component:CatchErrorComponent
+    },
+    {
+      path:"externalLib",
+      component:ExternamLibComponent
+    },
+    {
+      path:"d3js",
+      component:D3chartComponent
     }
   ]
 },
